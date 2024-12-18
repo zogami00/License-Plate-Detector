@@ -13,7 +13,9 @@ Test it by running the `app.py` file, built with `Streamlit`.
 
 ## Run
 ```sh
-streamlit run app.py
+streamlit run app.py #for web-base upload
+uvicorn app-fast:app --host 0.0.0.0 --port 8000 --reload #for api upload
+
 ```
 
 <img src="./imgs/interface2.png" width="800"/>
